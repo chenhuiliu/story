@@ -1,0 +1,28 @@
+.specialModules-like .special-item .item-top-warrper{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.14rem 0;
+}
+.specialModules-like .special-item{
+    padding: 0 0.43rem;
+    border-bottom: 1px solid #ccc;
+}
+.specialModules-like .book-item .img-warrper{
+    width: 1.4rem;
+    height: 1.9rem;
+    overflow: hidden;
+    margin-bottom: 0.26rem;
+}
+.specialModules-like .book-item .img-warrper img{
+    width: 100%;
+    height: 100%;
+}
+.specialModules-like .special-book-list{
+    display: flex;
+    justify-content: space-between;
+}
+.specialModules-like .special-book-list .book-item{
+    text-align: center;
+    width: 1.4rem;
+    margin-bottom: 0.26rem;
+}

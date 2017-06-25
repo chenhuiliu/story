@@ -1,0 +1,38 @@
+.competitiveProductsModules-like .tab-content{
+    padding-bottom: 1.1rem;
+}
+.competitiveProductsModules-like .tab-title-warrper{
+    height: 0.68rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #116f6f;
+}
+.competitiveProductsModules-like .tab-title{
+    width: 50%;
+    text-align: center;
+    line-height: 0.68rem;
+}
+.competitiveProductsModules-like .tab-selecetd{
+    color: #116f6f;
+    border-bottom: 1px solid #116f6f;
+}
+.competitiveProductsModules-like .book-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-between;
+    padding: 0.14rem 0.43rem;
+    border-bottom: 1px solid #ccc;
+}
+.competitiveProductsModules-like .book-item .img-warrper{
+    flex: 1;
+}
+.competitiveProductsModules-like .img-warrper img{
+    width: 1.02rem;
+    height: 1.37rem;
+}
+.competitiveProductsModules-like .book-item .item-right{
+    padding: 0.14rem 0;
+    flex: 3;
+    overflow: hidden;
+}

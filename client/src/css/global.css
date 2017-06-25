@@ -255,7 +255,7 @@ ul {
 .system-title {
     position: absolute;
     height: 50px;
-    background-color: #303537;
+    background-color: #156b6a;
     color: #fff;
     line-height: 50px;
     width: 100%;
@@ -281,6 +281,27 @@ ul {
         color: #efefef;
         font-size: 16px;
         line-height: 50px;
+    }
+    .system-footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #f6f6f6;
+    }
+        
+    .system-footer .menu-list{
+        display: flex;
+        justify-content: space-between;
+        padding: 0.034rem 0.8rem;
+    }
+    .system-footer .menu-item{
+        text-align: center;
+    }
+    .system-footer .menu-selected{
+        color: #23bd81;
+    }
+    .system-footer .menu-item .menu-name{
+        display: block;
     }
 
 .system-bodyScroll {
@@ -349,3 +370,12 @@ ul {
         height: 16px;
         vertical-align: text-top;
     }
+/*
+    超出省略号显示
+*/
+.ellipsis{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
