@@ -1,0 +1,58 @@
+{
+  "name": "snipe-client",
+  "version": "0.0.3",
+  "api-path": "http://113.106.54.204:3000/fs",
+  "private": true,
+  "description": "Data Report client webApp",
+  "scripts": {
+    "dist": "webpack --config build/webpack.dev.config.js",
+    "dev": "webpack-dev-server --inline --hot --port 9091 --config build/webpack.base.config.js",
+    "build": "webpack --progress --hide-modules --config build/webpack.prod-off-line.comfig.js",
+    "tozip": "node build/zip.js",
+    "tdmap": "webpack --watch --config  build/build-api.js",
+    "buildTdmap": "webpack --config build/build-api-pro.js",
+    "mv": "webpack --progress --hide-modules --config build/webpack.prod-off-line.comfig.js",
+    "lint": "eslint --ext .js --fix  test src build",
+    "assert": "mocha --compilers js:babel-core/register test",
+    "test": "npm run lint && npm run assert",
+    "deploy": "curl http://szci.tendcloud.com/view/snipe/job/snipe_client/build?token=go"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icarusion/vue-vueRouter-webpack.git"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "2.0.0",
+    "babel": "6.3.13",
+    "babel-core": "6.3.21",
+    "babel-loader": "6.2.0",
+    "babel-plugin-transform-runtime": "6.3.13",
+    "babel-preset-es2015": "6.3.13",
+    "babel-root-import": "4.1.3",
+    "babel-runtime": "5.8.34",
+    "babel-eslint": "7.1.1",
+    "eslint-config-airbnb": "11.2.0",
+    "eslint-plugin-babel": "3.3.0",
+    "eslint-plugin-import": "1.16.0",
+    "css-loader": "0.23.1",
+    "extract-text-webpack-plugin": "1.0.1",
+    "file-loader": "0.8.5",
+    "html-loader": "0.3.0",
+    "style-loader": "0.13.1",
+    "supertest": "2.0.0",
+    "url-loader": "0.5.7",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1",
+    "html-webpack-plugin": "2.22.0",
+    "clean-webpack-plugin": "0.1.13",
+    "chai": "3.5.0",
+    "eslint": "2.9.0", 
+    "generator-eslint": "1.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/icarusion/vue-vueRouter-webpack/issues"
+  },
+  "homepage": "https://github.com/icarusion/vue-vueRouter-webpack#readme"
+}

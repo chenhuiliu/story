@@ -1,0 +1,218 @@
+.clientResourceModules-resource .menu {
+    height: 40px;
+    border-bottom: 1px solid #cccccc;
+    position: relative;
+    background-color: #f1f1f1;
+}
+
+.clientResourceModules-resource .menu .wire li {
+    display: block;
+    width: 25%;
+    float: left;
+    margin-top: 13px;
+    height: 13px;
+    border-right: 1px solid #e4e4e4;
+}
+
+.clientResourceModules-resource .menu .txt {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.clientResourceModules-resource .menu .txt .list {}
+
+.clientResourceModules-resource .menu .txt .list .item {
+    line-height: 31px;
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-top: 6px;
+    touch-action: manipulation;
+}
+
+.clientResourceModules-resource .menu .txt .list .item:active,
+.clientResourceModules-resource .menu .txt .list .item.seleted:active {
+    background-color: #45bd7d;
+    color: #fff;
+    border-bottom: 3px solid #45bd7d;
+}
+
+.clientResourceModules-resource .menu .txt .list .item.seleted {
+    color: #45bd7d;
+    border-bottom: 3px solid #45bd7d;
+}
+
+.clientResourceModules-resource .sort {
+    background-color: #ffffff;
+    height: 39px;
+    border-bottom: solid 1px #d5d5d5;
+    overflow: hidden;
+}
+
+.clientResourceModules-resource .sort ul li {
+    float: left;
+    width: 25%;
+    line-height: 39px;
+    text-align: center;
+}
+
+.clientResourceModules-resource .sort ul li.on {
+    color: #45bd7d;
+}
+
+.clientResourceModules-resource .sort ul li.on:active {
+    color: #ffffff;
+}
+
+.clientResourceModules-resource .penal {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    top: 79px;
+    width: 100%;
+    padding: 0 10px 10px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.clientResourceModules-resource .penal .list .item {
+    margin-top: 10px;
+    background-color: #ffffff;
+    position: relative;
+    padding: 10px 15px 0px 15px;
+    border: solid 1px #eeeeee;
+}
+
+.clientResourceModules-resource .penal .list .item .name {
+    font-size: 19px;
+    max-width: 84px;
+    height: 24px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.clientResourceModules-resource .penal .list .item .icon_man {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../../svg/ico_gentleman_blue.svg) no-repeat;
+    background-position: center;
+    position: relative;
+    top: 2px;
+}
+
+.clientResourceModules-resource .penal .list .item .icon_woman {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../../svg/ico_lady_red.svg) no-repeat;
+    background-position: center;
+    position: relative;
+    top: 2px;
+}
+
+.clientResourceModules-resource .penal .list .item .phone {
+    font-size: 19px;
+    color: #333333;
+    padding-left: 5px;
+}
+
+.clientResourceModules-resource .penal .list .item .top {
+    padding-bottom: 10px;
+    border-bottom: solid 1px #ddd;
+}
+
+.clientResourceModules-resource .penal .list .item .bottom {
+    padding: 8px 0px;
+}
+
+.clientResourceModules-resource .penal .list .item .customerType {
+    font-size: 13px;
+    color: #999999;
+}
+
+.clientResourceModules-resource .penal .list .item .time {
+    font-size: 13px;
+    color: #3cace3;
+}
+
+.clientResourceModules-resource .penal .list .item .people,
+.clientResourceModules-resource .penal .list .item .desk,
+.clientResourceModules-resource .penal .list .item .info {
+    font-size: 13px;
+    color: #999999;
+}
+
+.clientResourceModules-resource .penal .list .item .count {
+    color: #000000;
+}
+
+.clientResourceModules-resource .penal .list .item .tag {
+    display: inline-block;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    line-height: 30px;
+    font-size: 13px;
+    text-align: right;
+    padding-right: 8px;
+}
+
+.clientResourceModules-resource .penal .list .item .tag .triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 14px solid #ffffff;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+.clientResourceModules-resource .penal .list .item .tag.intention {
+    background-color: #45bd7d;
+    color: #ffffff;
+    width: 68px;
+}
+
+.clientResourceModules-resource .penal .list .item .tag.refuse {
+    background-color: #ea7c6a;
+    color: #ffffff;
+    width: 68px;
+}
+
+.clientResourceModules-resource .penal .list .item .tag.leave {
+    background-color: #9dd5f1;
+    color: #ffffff;
+    width: 68px;
+}
+
+.clientResourceModules-resource .penal .list .item .tag.nosign {
+    background-color: #d7dddf;
+    color: #333333;
+    width: 68px;
+}
+
+.clientResourceModules-resource .penal .list .item .tag.intention .triangle,
+.clientResourceModules-resource .penal .list .item .tag.refuse .triangle,
+.clientResourceModules-resource .penal .list .item .tag.leave .triangle,
+.clientResourceModules-resource .penal .list .item .tag.nosign .triangle {
+    display: inline-block;
+}
+
+.clientResourceModules-resource .noCount {
+    margin-top: 60px;
+}
+
+.clientResourceModules-resource .noCount .descript {
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 13px;
+}
