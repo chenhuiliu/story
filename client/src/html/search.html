@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='maximum-scale=1,minimum-scale=1,width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <title>阅读</title>
+    <link href="./../css/global.css" rel="stylesheet" />
+    <link href="./../css/main.css" rel="stylesheet" />
+    <link href="./search.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./../css/iconfont/iconfont.css">
+    <script>
+        sizeChange();
+        $(window).resize(function () {
+            sizeChange();
+        });
+        function sizeChange() {
+            var html = document.documentElement;
+            var windowWidth = html.clientWidth;
+            html.style.fontSize = windowWidth / 6.4 + 'px';
+        }
+    </script>
+</head>
+
+<body ontouchstart="">
+
+    <div class="searchModules-like">
+        <div class="system-title">
+            <span class="goBack" ontouchstart="TDM.route.back()">返回</span>
+            <span class="titText">搜索</span>
+        </div>
+        <div class="system-bodyScroll">
+            <div class="penal">
+                <div class="search-warrper">
+                    <i class="icon iconfont icon-magnifier"></i>
+                    <input type="text">
+                    <span class="search-btn">搜索</span>
+                </div>
+                <div class="hot-searchs">
+                    <span class="hot-search-title">热门搜索</span>
+                    <div class="hot-list">
+                        <div class="hot-item">
+                            sgjlsk
+                        </div>
+                        <div class="hot-item">
+                            sgjlsk
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="system-footer">
+            <div class="menu-list">
+                <div class="menu-item menu-selected">
+                    <i class="icon iconfont icon-shujia"></i>
+                    <span class="menu-name">书架</span>
+                </div>
+                <div class="menu-item">
+                    <i class="icon iconfont icon-jingpin"></i>
+                    <span class="menu-name">精品</span>
+                </div>
+                <div class="menu-item">
+                    <i class="icon iconfont icon-zhuanti"></i>
+                    <span class="menu-name">专题</span>
+                </div>
+                <div class="menu-item">
+                    <i class="icon iconfont icon-sousuo-sousuo"></i>
+                    <span class="menu-name">搜索</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+.searchModules-like .search-warrper{
+    margin: 0.26rem;
+    display: flex;
+    align-items: center;
+}
+.searchModules-like .search-warrper i{
+    font-size: 0.29rem;
+    position: absolute;
+    left: 0.43rem;
+}
+.searchModules-like .search-warrper input{
+    border: 1px solid #ccc;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    border-radius: 0.24rem;
+    width: 80%;
+    padding-left: 0.55rem;
+}
+.searchModules-like .search-warrper .search-btn{
+    margin-left: 0.34rem;
+}
+.searchModules-like .hot-searchs{
+    padding: 0 0.26rem;
+}
+.searchModules-like .hot-searchs .hot-search-title{
+    display: block;
+    padding-bottom: 0.26rem;
+}
+.searchModules-like .hot-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.26rem;
+}
+.searchModules-like .hot-list .hot-item{
+    width: 45%;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 12px;
+    background: #1296db;
+    text-align: center;
+    color: #fff;
+}
