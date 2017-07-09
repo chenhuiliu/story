@@ -6,6 +6,8 @@ import {
 import alertInfo from './index/alertInfo.js';
 import confirmInfo from './index/confirmInfo.js';
 import loading from './index/loading.js';
+debugger
+// alert()
 window.TDM = {
     util: util,
     ui: {

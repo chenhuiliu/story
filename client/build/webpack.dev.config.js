@@ -21,8 +21,6 @@ config.plugins = (config.plugins || []).concat([
     templateContent: function () {
       var data = fs.readFileSync('./src/index.html', 'utf-8');
       var str = data.replace('<link rel="stylesheet" href="../dist/main.css">', '')
-        .replace('<script src="../dist/vendors.js"></script>', '')
-        .replace('<script src="../dist/main.js"></script>', '')
         .replace(/[\r\n]/g, '')
         .replace(/\s+([^<>]+)(?=<)/g, function (m) {
           return m.replace(/\s+/g, '');
