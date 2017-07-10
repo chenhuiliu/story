@@ -17,18 +17,7 @@ window.TDM = {
     },
     route: new jsRoute()
 }
-TDM.util.ajax({
-    url: '/a.json',
 
-    data: {
-
-    },
-    type: "get",
-    success: function (result) {
-// debugger
-        // debugger
-    }
-})
 
 // alert()
 let path = [{
