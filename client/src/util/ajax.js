@@ -85,7 +85,7 @@ export function ajax(option) {
                     if (TDM.ui.loading.show) {
                         TDM.ui.loading.show = false;
                     }
-                    debugger
+                    // debugger
                     var data = o.responseJSON;
                     //加入cahce
                     if (this.__cache == true || option.cache.toString() == 'true' || option.cache.toString() == 'update') {
