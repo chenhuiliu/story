@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="./../css/iconfont/iconfont.css">
     <script>
         sizeChange();
-        $(window).resize(function () {
+        window.onresize = function () {
             sizeChange();
-        });
+        };
 
         function sizeChange() {
             var html = document.documentElement;
@@ -105,9 +105,6 @@
             </div>
         </div>
     </div>
-
-
-
 
 
 </body>
