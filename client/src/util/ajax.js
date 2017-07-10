@@ -85,13 +85,14 @@ export function ajax(option) {
                     if (TDM.ui.loading.show) {
                         TDM.ui.loading.show = false;
                     }
+                    debugger
                     var data = o.responseJSON;
                     //加入cahce
                     if (this.__cache == true || option.cache.toString() == 'true' || option.cache.toString() == 'update') {
                         //  debugger
-                        ajaxCache.put(this.responseURL, TDM.util.jsonDataCopy(data.result));
+                        ajaxCache.put(this.responseURL, TDM.util.jsonDataCopy(data));
                     }
-                    option.success(data.result);
+                    option.success(data);
 
 
                 } else {

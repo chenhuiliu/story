@@ -3,6 +3,6 @@
  */
 var config = {
   debug: false,
-  apiPath: 'http://router.apigateway.talkingdata.com'
+  apiPath: '../data'
 };
 module.exports = config;
