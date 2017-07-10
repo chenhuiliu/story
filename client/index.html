@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -9,10 +10,24 @@
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="x-dns-prefetch-control" content="on" />
     <title>客必得</title>
-     <link href="../dist/main.css" rel="stylesheet" />
+    <link href="dist/main.css" rel="stylesheet" />
+  
+    <script>
+        sizeChange();
+        window.onresize = function () {
+            sizeChange();
+        };
+
+        function sizeChange() {
+            var html = document.documentElement;
+            var windowWidth = html.clientWidth;
+            html.style.fontSize = windowWidth / 6.4 + 'px';
+        }
+    </script>
 </head>
+
 <body ontouchstart="">
-      <div class="scrollerContent" id="desk-body">
+    <div class="scrollerContent" id="desk-body">
         <div class="scroller" id="routeScroller">
         </div>
     </div>
@@ -51,7 +66,7 @@
                     <div class="modal animated">
                         <div class="title">
                             提示
-                            
+
                         </div>
                         <div class="message">
                             <div class="text">发送预订通知是否带有<b>座位号</b>？</div>
@@ -72,18 +87,19 @@
         </tbody>
     </table>
     <script type="text/javascript">
-        document.body.onoffline = function () {
-            confirmInfo.show("似乎已断开与互联网的连接。");
-        };
-        document.body.ononline = function () {
-            confirmInfo.show("网络恢复正常，请重新加载。", function () {
-                window.location.reload();
-            }, function () {
-                window.location.reload();
-            });
-        };
+                    document.body.onoffline = function () {
+                        confirmInfo.show("似乎已断开与互联网的连接。");
+                    };
+                    document.body.ononline = function () {
+                        confirmInfo.show("网络恢复正常，请重新加载。", function () {
+                            window.location.reload();
+                        }, function () {
+                            window.location.reload();
+                        });
+                    };
     </script>
-    <script src="./../dist/vendors.js"></script>
-	<script src="./../dist/main.js"></script>
+    <script src="dist/vendors.js"></script>
+    <script src="dist/main.js"></script>
 </body>
+
 </html>

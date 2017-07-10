@@ -1,57 +1,57 @@
 {
     "list": [
         {
-            "img":"../images/school.jpg",
+            "img":"../src/images/school.jpg",
             "readingState":1,
             "bookName":"从零开始"
         },
         {
-            "img":"../images/school.jpg",
+            "img":"../src/images/school.jpg",
             "readingState":0,
             "bookName":"影子银行"
         },
         {
-            "img":"../images/school.jpg",
+            "img":"../src/images/school.jpg",
             "readingState":1,
             "bookName":"三体"
         },
         {
-            "img":"../images/school.jpg",
+            "img":"../src/images/school.jpg",
             "readingState":0,
             "bookName":"一本书读懂运营"
         },
         {
-            "img":"../images/school.jpg",
+            "img":"../src/images/school.jpg",
             "readingState":1,
             "bookName":"嫌疑人X的献身"
         },
         {
-            "img":"../images/school.jpg",
+            "img":"../src/images/school.jpg",
             "readingState":1,
             "bookName":"从零开始"
         },
         {
-            "img":"../images/school.jpg",
+            "img":"../src/images/school.jpg",
             "readingState":1,
             "bookName":"湖畔"
         },
         {
-            "img":"../images/school.jpg",
+            "img":"../src/images/school.jpg",
             "readingState":1,
             "bookName":"从零开始"
         },
         {
-            "img":"../images/school.jpg",
+            "img":"../src/images/school.jpg",
             "readingState":1,
             "bookName":"从零开始"
         },
         {
-            "img":"../images/school.jpg",
+            "img":"../src/images/school.jpg",
             "readingState":1,
             "bookName":"从零开始"
         },
         {
-            "img":"../images/school.jpg",
+            "img":"../src/images/school.jpg",
             "readingState":1,
             "bookName":"从零开始"
         }

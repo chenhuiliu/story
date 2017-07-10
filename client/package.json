@@ -6,7 +6,7 @@
   "description": "Data Report client webApp",
   "scripts": {
     "dist": "webpack --config webpack.dev.config.js",
-    "dev": "webpack-dev-server --port 8089 --content-base ./ --inline --hot --compress --history-api-fallback --config webpack.base.config.js",
+    "dev": "webpack --watch --progress --config webpack.base.config.js",
     "build": "webpack --progress --hide-modules --config webpack.prod-off-line.comfig.js",
     "tozip": "node build/zip.js",
     "tdmap": "webpack --watch --config  build/build-api.js",
@@ -28,6 +28,7 @@
     "mustache": "^2.3.0"
   },
   "devDependencies": {
+    "monkey-hot-loader":"0.0.3",
     "autoprefixer-loader": "^2.0.0",
     "babel": "^6.23.0",
     "babel-core": "^6.25.0",

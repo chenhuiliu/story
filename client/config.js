@@ -3,6 +3,6 @@
  */
 var config = {
   debug: false,
-  apiPath: '../data'
+  apiPath: './data'
 };
 module.exports = config;

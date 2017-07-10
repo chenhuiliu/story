@@ -2,13 +2,16 @@ import './css.css';
 import Mustache from 'mustache';
 module.exports = {
     html: require("./html.html"),
+    state:{
+        name:"12123",
+
+    },
     load: function () {
-        // debugger
-        TDM.ui.loading.hide();
-        // debugger
-        //  debugger
-        this.showTiitle();
-        this.ajax();
+     
+        TDM.ui.loading.hide()
+        this.render()
+        // this.showTiitle();
+        // this.ajax();
     },
     showTiitle() {
         var template = document.querySelector('#clientResourceModules-template').innerHTML;
@@ -20,6 +23,9 @@ module.exports = {
         document.getElementById('clientResourceModules-target').innerHTML = rendered;
         // $('#clientResourceModules-target').html(rendered);
     },
+    render(){
+       document.getElementById('clientResourceModules-target').innerHTML=`<h1>Hello, ${this.state.name}</h1>`
+    },
     ajax() {
         TDM.util.ajax({
             url: '/a.json',
@@ -29,6 +35,7 @@ module.exports = {
             },
             type: "get",
             success: function (result) {
+               // alert();
                 // debugger
                 // debugger
             }

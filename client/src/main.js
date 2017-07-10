@@ -32,6 +32,12 @@ let path = [{
             require(['./component/foodies/main.js'], resolve);
         }
     },
+    {
+        path: 'bookshelf',
+        component: function (resolve) {
+            require(['./component/bookshelf/main.js'], resolve);
+        }
+    },
 ]
 
 window.addEventListener("load", function () {
