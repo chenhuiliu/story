@@ -6,7 +6,7 @@ import {
 import alertInfo from './index/alertInfo.js';
 import confirmInfo from './index/confirmInfo.js';
 import loading from './index/loading.js';
-//debugger
+// debugger
 // alert()
 window.TDM = {
     util: util,
@@ -17,6 +17,7 @@ window.TDM = {
     },
     route: new jsRoute()
 }
+
 
 // alert()
 let path = [{

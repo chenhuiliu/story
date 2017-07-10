@@ -17,7 +17,7 @@ module.exports = {
     path: path.join(__dirname, './dist'),
     filename: '[name]' + chunkhash + '.js',
     chunkFilename: '[name]' + chunkhash + '.chunk.js',
-    publicPath: '/dist/',  
+    publicPath: '/dist/',
   },
   // 加载器
   module: {
@@ -29,7 +29,15 @@ module.exports = {
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          use: 'css-loader'
+          use: ['css-loader?minimize', 'autoprefixer-loader'],
+          fallback: 'style-loader'
+        })
+      },
+      {
+        test: /\.less/,
+        use: ExtractTextPlugin.extract({
+          use: ['css-loader?minimize', 'autoprefixer-loader', 'less-loader'],
+          fallback: 'style-loader'
         })
       },
       {
