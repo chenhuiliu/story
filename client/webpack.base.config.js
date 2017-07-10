@@ -7,17 +7,17 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var chunkhash = global.offLine ? global.htmluseRandom : '';
-var projectRoot = path.resolve(__dirname, '../');
 module.exports = {
   // 入口
   entry: {
-    main: path.join(__dirname, '../src/main'),
+    main: path.join(__dirname, './src/main'),
   },
   // 输出
   output: {
-    path: path.join(__dirname, '../dist'),
+    path: path.join(__dirname, './dist'),
     filename: '[name]' + chunkhash + '.js',
-    chunkFilename: '[name]' + chunkhash + '.chunk.js'
+    chunkFilename: '[name]' + chunkhash + '.chunk.js',
+    publicPath: '/dist/',  
   },
   // 加载器
   module: {
