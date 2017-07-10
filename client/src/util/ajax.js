@@ -82,14 +82,14 @@ export function ajax(option) {
                     } catch (e) {}
                 }
                 if (httpSuccess(httpRequest)) {
-                    if (TD.ui.loading.show) {
-                        TD.ui.loading.show = false;
+                    if (TDM.ui.loading.show) {
+                        TDM.ui.loading.show = false;
                     }
                     var data = o.responseJSON;
                     //加入cahce
                     if (this.__cache == true || option.cache.toString() == 'true' || option.cache.toString() == 'update') {
                         //  debugger
-                        ajaxCache.put(this.responseURL, TD.util.jsonDataCopy(data.result));
+                        ajaxCache.put(this.responseURL, TDM.util.jsonDataCopy(data.result));
                     }
                     option.success(data.result);
 
@@ -106,8 +106,8 @@ export function ajax(option) {
         }
     };
 
-    if (option.loading && !TD.ui.loading.show) {
-        TD.ui.loading.show = true;
+    if (option.loading && !TDM.ui.loading.show) {
+        TDM.ui.loading.show = true;
     }
     // debugger
 
@@ -123,8 +123,8 @@ export function ajax(option) {
     if (option.cache == true || option.cache.toString() == 'true') {
         var cacheData = ajaxCache.get(option.url);
         if (cacheData) {
-            if (TD.ui.loading.show) {
-                TD.ui.loading.show = false;
+            if (TDM.ui.loading.show) {
+                TDM.ui.loading.show = false;
             }
             option.success(cacheData);
 
