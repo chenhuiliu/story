@@ -27,12 +27,12 @@
         },
         {
             "img":"../src/images/school.jpg",
-            "readingState":1,
+            "readingState":0,
             "bookName":"从零开始"
         },
         {
             "img":"../src/images/school.jpg",
-            "readingState":1,
+            "readingState":0,
             "bookName":"湖畔"
         },
         {

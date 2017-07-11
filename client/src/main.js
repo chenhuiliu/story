@@ -38,6 +38,24 @@ let path = [{
             require(['./component/bookshelf/main.js'], resolve);
         }
     },
+    {
+        path: 'jingpin',
+        component: function (resolve) {
+            require(['./component/jingpin/main.js'], resolve);
+        }
+    },
+    {
+        path: 'zhuanti',
+        component: function (resolve) {
+            require(['./component/zhuanti/main.js'], resolve);
+        }
+    },
+    {
+        path: 'search',
+        component: function (resolve) {
+            require(['./component/search/main.js'], resolve);
+        }
+    },
 ]
 
 window.addEventListener("load", function () {

@@ -1,33 +1,25 @@
-.clientResourceModules-like .deputyTitle {
-    height: 50px;
-    line-height: 50px;
-    background-color: #ffffff;
-    position: relative;
-    border-bottom: solid 1px #d5d5d5;
-    font-size: 16px;
-    color: #333333;
-    padding-left: 14px;
-}
-
 .clientResourceModules-like .penal {
-    padding: 15px;
+    padding: 0.14rem;
 }
-.clientResourceModules-like .row-list{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 0.14rem;
-    margin-bottom: 0.26rem;
+.clientResourceModules-like .book-list{
+    padding: 0.14rem;
+    margin-bottom: 1rem;
+    clear: both;
+    overflow: hidden;
 }
-.clientResourceModules-like .row-list .item{
-    width: 1.7rem;
+.clientResourceModules-like .book-list .item{
+    width: 33.3%;
+    float: left;
+    margin-bottom: 0.26rem;    
 }
 .clientResourceModules-like .item .item-content{
     position: relative;
-    width: 100%;
+    width: 90%;
     height: 2.1rem;
     padding: 0.09rem;
     overflow: hidden;   
     border: 1px solid #333333;
+    margin: 0 auto;
 }
 .clientResourceModules-like .item .item-content img{
     width: 100%;

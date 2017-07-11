@@ -1,0 +1,86 @@
+{
+    "topList": [
+        {
+            "img":"../src/images/school.jpg",
+            "thematicType":"Top100",
+            "bookName":"从零开始",
+            "id":12
+        },
+        {
+            "img":"../src/images/school.jpg",
+            "thematicType":"Top100",
+            "bookName":"影子银行",
+            "id":13          
+        },
+        {
+            "img":"../src/images/school.jpg",
+            "thematicType":"Top100",
+            "bookName":"三体",
+            "id":14           
+        },
+        {
+            "img":"../src/images/school.jpg",
+            "thematicType":"Top100",
+            "bookName":"一本书读懂运营",
+            "id":16
+        },
+        {
+            "img":"../src/images/school.jpg",
+            "thematicType":"Top100",
+            "bookName":"嫌疑人X的献身",
+            "id":17
+        }
+    ],
+    "hotList":[
+        {
+            "img":"../src/images/school.jpg",
+            "thematicType":"Hot",
+            "bookName":"影子银行",
+            "id":18          
+        },
+        {
+            "img":"../src/images/school.jpg",
+            "thematicType":"Hot",
+            "bookName":"三体",
+            "id":19            
+        },
+        {
+            "img":"../src/images/school.jpg",
+            "thematicType":"Hot",
+            "bookName":"一本书读懂运营",
+            "id":22
+        },
+        {
+            "img":"../src/images/school.jpg",
+            "thematicType":"Hot",
+            "bookName":"嫌疑人X的献身",
+            "id":23
+        }
+    ],
+    "newBookList":[
+        {
+            "img":"../src/images/school.jpg",
+            "thematicType":"New Book",
+            "bookName":"影子银行",
+            "id":38          
+        },
+        {
+            "img":"../src/images/school.jpg",
+            "thematicType":"New Book",
+            "bookName":"三体",
+            "id":39            
+        },
+        {
+            "img":"../src/images/school.jpg",
+            "thematicType":"New Book",
+            "bookName":"一本书读懂运营",
+            "id":32
+        },
+        {
+            "img":"../src/images/school.jpg",
+            "thematicType":"New Book",
+            "bookName":"嫌疑人X的献身",
+            "id":33
+        }
+    ]
+}
