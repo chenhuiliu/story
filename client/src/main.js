@@ -21,9 +21,9 @@ window.TDM = {
 
 // alert()
 let path = [{
-        path: 'editLike',
+        path: 'common',
         component: function (resolve) {
-            require(['./component/editorlike/main.js'], resolve);
+            require(['./component/common/main.js'], resolve);
         }
     },
     {
@@ -54,6 +54,18 @@ let path = [{
         path: 'search',
         component: function (resolve) {
             require(['./component/search/main.js'], resolve);
+        }
+    },
+    {
+        path: 'bookdetail',
+        component: function (resolve) {
+            require(['./component/bookdetail/main.js'], resolve);
+        }
+    },
+    {
+        path: 'reading',
+        component: function (resolve) {
+            require(['./component/reading/main.js'], resolve);
         }
     },
 ]

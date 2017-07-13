@@ -7,6 +7,7 @@ module.exports = {
         this.ajax();
     },
     ajax() {
+        var me = this;
         TDM.util.ajax({
             url: '/hotSearch.json',
             data: {

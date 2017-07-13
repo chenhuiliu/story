@@ -1,0 +1,15 @@
+.bookReadingModules-like .content-box{
+    height: 100%;
+    margin: 0.17rem;
+}
+.bookReadingModules-like .content-box .chapter{
+    padding-bottom: 0.85rem;
+}
+.bookReadingModules-like .chapter .paragraph{
+    overflow: hidden;
+    margin: 0.14rem 0;
+    line-height: 0.41rem;
+    letter-spacing: 0;
+    text-align: justify;
+    text-indent: 2em;
+}

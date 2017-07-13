@@ -204,3 +204,37 @@ export function hide(dom) {
     dom.style.display = "none";
   }
 };
+
+
+export function addAfterDom(dom, andDom) {
+  var tem = dom.nextSibling, isnextSibling = false;
+  while (tem.nextSibling) {
+    if (tem.nextSibling.tagName) {
+      isnextSibling = true;
+      break;
+    } else {
+      isnextSibling = false;
+      tem = tem.nextSibling;
+    }
+  }
+
+  if (isnextSibling) {
+    dom.parentNode.insertBefore(andDom, dom.nextSibling);
+  } else {
+    dom.parentNode.appendChild(andDom);
+  }
+};
+export function addEvent(dom, type, className, fun) {
+  dom.addEventListener(type, function () {
+    var origin = event.target;
+
+    while (!origin.classList.contains(className)) {
+      if (origin === this) { break; }
+      origin = origin.parentNode;
+    }
+    if (origin.classList.contains(className)) {
+      fun(origin, event);
+    }
+
+  });
+}

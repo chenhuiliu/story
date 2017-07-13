@@ -16,7 +16,6 @@ module.exports = {
             success: function (result) {
                 var html = [];
                 for (var k in result) {
-                    console.log(k, '-----k----', result[k]);
                     html.push('<div class="special-item"><div class="item-top-warrper"><h2>'+result[k][0]['thematicType']+'</h2>');
                     html.push('<span class="more-link">更多<i class="icon iconfont icon-back"></i></span></div>');
                     for(var i=0;i<3;i++){

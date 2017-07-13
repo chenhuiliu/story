@@ -37,3 +37,6 @@
     flex: 3;
     overflow: hidden;
 }
+.competitiveProductsModules-like #competitiveProductsModules-girlContent{
+    display: none;
+}
