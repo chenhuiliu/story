@@ -1,4 +1,5 @@
 import './css.css';
+import {showBlock, hide} from '../../util/lang.js';
 module.exports = {
     html: require("./html.html"),
     state: {
@@ -10,6 +11,12 @@ module.exports = {
     modules: ['bookshelf', 'jingpin', 'zhuanti', 'search'],
     loadModule(obj, module, fun) {
         let me = this;
+        let isShowBack = document.getElementsByClassName('goBack')[0];
+        // if(module == 'bookshelf'){
+        //     isShowBack.style.display = 'none';
+        // } else {
+        //     isShowBack.style.display = 'block';
+        // }
         if (obj == null) {
             require(['./../' + module + '/main'], function (model) {
                 me.state.obj = model;
@@ -20,14 +27,14 @@ module.exports = {
         } else {
             fun();
         }
-        for (var i=0,l=me.modules.length;i<l;i++){
-            var currentModule = document.getElementById('commonModules-render-' + me.modules[i]);
-            var currentMenu = document.getElementById('commonModules-'+me.modules[i]);
+        for (let i=0,l=me.modules.length;i<l;i++){
+            let currentModule = document.getElementById('commonModules-render-' + me.modules[i]);
+            let currentMenu = document.getElementById('commonModules-'+me.modules[i]);
             if (me.modules[i] == module) {
-                currentModule.style.display = 'block';
+                showBlock(currentModule);
                 currentMenu.classList.add('menu-selected');
             } else if(currentModule){
-                currentModule.style.display = 'none';
+                hide(currentModule);
                 currentMenu.classList.remove('menu-selected');
             }
         }
@@ -35,6 +42,7 @@ module.exports = {
     load: function () {
         TDM.ui.loading.hide()
         let me = this;
+        me.loadModule(me.state.bookshelfObj,'bookshelf',function () {});
         document.getElementById('commonModules-bookshelf').onclick = function () {
             me.loadModule(me.state.bookshelfObj,'bookshelf',function () {
 

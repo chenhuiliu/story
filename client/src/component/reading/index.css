@@ -1,14 +1,67 @@
 .bookReadingModules-like .content-box{
     margin: 0.17rem;
+    height: 90%;
 }
 .bookReadingModules-like .content-box .chapter{
     padding-bottom: 0.85rem;
 }
+.bookReadingModules-like .chapter .chapter-title-box{
+    border-bottom: 1px solid;
+    padding-bottom: 0.17rem;
+}
 .bookReadingModules-like .chapter .paragraph{
     overflow: hidden;
-    margin: 0.14rem 0;
-    line-height: 0.41rem;
+    margin: 0.17rem 0;
+    line-height: 150%;
     letter-spacing: 0;
     text-align: justify;
     text-indent: 2em;
+}
+.bookReadingModules-like #reading-menus{
+    padding: 0.17rem 0;
+}
+.bookReadingModules-like .modify-style-box{
+    display: none;
+    position: absolute;
+    top: -40px;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    padding: 0 0.26rem;
+}
+.bookReadingModules-like .modify-style-box p{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #666;
+}
+.bookReadingModules-like .modify-style-box p:not(:last-child){
+    border-bottom: 1px solid;
+}
+.bookReadingModules-like .modify-style-box span:not(:first-child){
+    font-size: 18px;
+    color: #000;
+}
+.bookReadingModules-like .modify-style-box .background-style span:not(:first-child){
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 40%;
+    border: 1px solid #999;
+}
+.background-style .purple{
+    background: #ebdcf1;
+}
+.background-style .green{
+    background: #dff9e0;
+}
+.background-style .yellow{
+    background: #f7f1ae;
+}
+.background-style .black{
+    background: #50504e;
+}
+.bookReadingModules-like #paragraph-box{
+    font-size: 16px;
 }

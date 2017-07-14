@@ -1,54 +1,67 @@
 import './index.css';
-import { addEvent } from '../../util/lang.js';
+import { addEvent, showBlock, hide } from '../../util/lang.js';
 module.exports = {
     html: require("./index.html"),
-    types: ['boy', 'girl'],
     load: function () {
         TDM.ui.loading.hide()
-        this.ajax(0);
+        this.getBoyAjax();
+        this.getGirlAjax();
+
         addEvent(document.getElementById('tab-title-warrper'), 'click', 'tab-title', function (dom) {
-            console.log(dom,'---dom---');
-            var type = dom.getAttribute('id');
-            var types =  ['boy', 'girl'];
-            for (var i = 0, l = types.length; i < l; i++) {
-                var currentTab = document.getElementById('competitiveProductsModules-' + types[i] + 'Content');
-                var currentTabTitle = document.getElementById(types[i]);
+            let type = dom.getAttribute('id');
+            let types = ['boy', 'girl'];
+            for (let i = 0, l = types.length; i < l; i++) {
+                let currentTab = document.getElementById('competitiveProductsModules-' + types[i] + 'Content');
+                let currentTabTitle = document.getElementById(types[i]);
                 if (type == types[i]) {
-                    currentTab.style.display = 'block';
+                    showBlock(currentTab);
                     currentTabTitle.classList.add('tab-selecetd');
                 } else {
-                    currentTab.style.display = 'none';
+                    hide(currentTab);
                     currentTabTitle.classList.remove('tab-selecetd');
                 }
             }
-        })
+        });
+        document.getElementById('girl').onclick = function () {
+            let me = this;
+            console.log(me, '-----me');
+            //  me.getGirlAjax();
+        };
     },
-    ajax(type) {
+    getGirlAjax() {
         TDM.util.ajax({
-            url: '/jingpin.json',
-            data: {
-                "type": type
-            },
-            type: "get",
+            url: '/girlData.json',
+            data: {},
+            type: 'get',
             success: function (result) {
-                var boyHtml = [];
-                var girlHtml = [];
-                var boyData = result.boylist;
-                var girlData = result.girllist;
-                boyData.forEach((item) => {
-                    boyHtml.push('<div class="book-item"><div class="img-warrper">');
-                    boyHtml.push('<img src="https://qidian.qpic.cn/qdbimg/349573/c_5369131804594101/90" alt=""></div>');
-                    boyHtml.push('<div class="item-right"><h3>' + item.bookName + '</h3><p>' + item.authorType + '</p>');
-                    boyHtml.push('<div class="ellipsis">' + item.description + '</div></div></div>');
-                });
+                let girlData = result.girllist;
+                let girlHtml = [];
                 girlData.forEach((item) => {
                     girlHtml.push('<div class="book-item"><div class="img-warrper">');
                     girlHtml.push('<img src="https://qidian.qpic.cn/qdbimg/349573/c_5369131804594101/90" alt=""></div>');
                     girlHtml.push('<div class="item-right"><h3>' + item.bookName + '</h3><p>' + item.authorType + '</p>');
                     girlHtml.push('<div class="ellipsis">' + item.description + '</div></div></div>');
                 });
-                document.getElementById('competitiveProductsModules-boyContent').innerHTML = boyHtml.join('');
                 document.getElementById('competitiveProductsModules-girlContent').innerHTML = girlHtml.join('');
+            }
+        });
+    },
+    getBoyAjax() {
+        TDM.util.ajax({
+            url: '/jingpin.json',
+            data: {
+            },
+            type: "get",
+            success: function (result) {
+                let boyHtml = [];
+                let boyData = result.boylist;
+                boyData.forEach((item) => {
+                    boyHtml.push('<div class="book-item"><div class="img-warrper">');
+                    boyHtml.push('<img src="https://qidian.qpic.cn/qdbimg/349573/c_5369131804594101/90" alt=""></div>');
+                    boyHtml.push('<div class="item-right"><h3>' + item.bookName + '</h3><p>' + item.authorType + '</p>');
+                    boyHtml.push('<div class="ellipsis">' + item.description + '</div></div></div>');
+                });
+                document.getElementById('competitiveProductsModules-boyContent').innerHTML = boyHtml.join('');
             }
         })
     }

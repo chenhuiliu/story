@@ -43,9 +43,9 @@ module.exports = {
             },
             type: "get",
             success: function (result) {
-                var html = [];
-                var data = result.list;
-                var state = {
+                let html = [];
+                let data = result.list;
+                let state = {
                     '0': '已读',
                     '1': '未读'
                 }

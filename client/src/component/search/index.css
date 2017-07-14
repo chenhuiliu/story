@@ -8,6 +8,9 @@
     position: absolute;
     left: 0.43rem;
 }
+.searchModules-like .search-warrper .icon-clear{
+    left: 72%;
+}
 .searchModules-like .search-warrper input{
     border: 1px solid #ccc;
     height: 0.48rem;
