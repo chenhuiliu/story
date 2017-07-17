@@ -1,5 +1,5 @@
 import './index.css';
-import { addEvent } from '../../util/lang.js';
+import { addEvent, showBlock, hide } from '../../util/lang.js';
 module.exports = {
     html: require("./index.html"),
     load: function () {
@@ -16,22 +16,18 @@ module.exports = {
 
             inputDom.setAttribute('value','');
             inputDom.focus();
-            hotSearch.style.display = 'block';
-            bookdetail.style.display = 'none';
+            showBlock(hotSearch);
+            hide(bookdetail);
         };
         document.getElementById('hot-seatch-btn').onclick = function(){
             require(['./../bookdetail/main'], function(model){
                 let hotSearch = document.getElementsByClassName('hot-searchs')[0];
                 let searchResult = document.getElementById('search-result');
-                let resultStyle = searchResult.style.display;
 
-                hotSearch.style.display = 'none';
-                
-                if(resultStyle == 'none'){
-                    resultStyle = 'block';
-                }
+                hide(hotSearch);
                 searchResult.innerHTML = model.html;
                 model.load();
+                showBlock(searchResult);
             });
         };
     },

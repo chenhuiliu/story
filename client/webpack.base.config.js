@@ -18,7 +18,7 @@ module.exports = {
     path: path.join(__dirname, './dist'),
     filename: '[name]' + chunkhash + '.js',
     chunkFilename: '[name]' + chunkhash + '.chunk.js',
-    publicPath: './dist/',
+    publicPath: '/dist/',
   },
   // 加载器
   module: {
@@ -45,6 +45,10 @@ module.exports = {
       test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
       loader: 'url-loader?limit=1024'
     },
+    // {
+    //   test: /\.(woff|svg|eot|ttf)\??.*$/,
+    //   loader: 'url-loader?limit=80000',
+    // },
     {
       test: /\.(html|tpl)$/,
       loader: 'html-loader'

@@ -19,6 +19,7 @@
 }
 .bookReadingModules-like #reading-menus{
     padding: 0.17rem 0;
+    color: #000;
 }
 .bookReadingModules-like .modify-style-box{
     display: none;

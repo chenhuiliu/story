@@ -68,6 +68,12 @@ let path = [{
             require(['./component/reading/main.js'], resolve);
         }
     },
+    {
+        path: 'more',
+        component: function (resolve) {
+            require(['./component/more/main.js'], resolve);
+        }
+    },
 ]
 
 window.addEventListener("load", function () {

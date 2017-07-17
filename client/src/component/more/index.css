@@ -1,0 +1,35 @@
+.moreBooksModules-like .penal{
+    padding-bottom: 2rem;
+}
+.moreBooksModules-like .book-warrper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-between;
+    padding: 0.2rem 0.3rem;
+    border-bottom: 1px solid #ccc;
+}
+.moreBooksModules-like .book-warrper .img-warrper{
+    flex: 1;
+    padding-right: 0.33rem;
+}
+.moreBooksModules-like .img-warrper img{
+    width: 100%;
+    height: 100%;
+}
+.moreBooksModules-like .book-warrper .book-right{
+    padding: 0.2rem 0;
+    flex: 3;
+    overflow: hidden;
+}
+.moreBooksModules-like .book-right .average-height{
+    height: 33.3%;
+    line-height: 2;
+}
+.moreBooksModules-like .book-right .book-type{
+    border: 1px solid red;
+    border-radius: 4px;
+    color: red;
+    padding: 0 4px;
+    margin-right: 15px;
+}

@@ -6,6 +6,7 @@ module.exports = {
         TDM.ui.loading.hide()
         this.getBoyAjax();
         this.getGirlAjax();
+        let me = this;
 
         addEvent(document.getElementById('tab-title-warrper'), 'click', 'tab-title', function (dom) {
             let type = dom.getAttribute('id');
@@ -22,11 +23,17 @@ module.exports = {
                 }
             }
         });
-        document.getElementById('girl').onclick = function () {
-            let me = this;
-            console.log(me, '-----me');
-            //  me.getGirlAjax();
-        };
+
+        me.getInReading('boy');
+        me.getInReading('girl');
+    },
+    getInReading(type){
+        addEvent(document.getElementById('competitiveProductsModules-'+type+'Content'),'click','book-item',function(){
+            require(['./../bookdetail/main'],function(model){
+                document.getElementById('commonModules-render-jingpin').innerHTML = model.html;
+                model.load();
+            });
+        });
     },
     getGirlAjax() {
         TDM.util.ajax({
