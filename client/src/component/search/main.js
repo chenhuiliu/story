@@ -30,6 +30,13 @@ module.exports = {
                 showBlock(searchResult);
             });
         };
+        if(document.getElementById('start-reading')){
+            document.getElementById('start-reading').onclick = function(){
+                require(['./../reading/main'],function(model){
+                    model.load();
+                })  
+            }
+        }
     },
     ajax() {
         let me = this;
